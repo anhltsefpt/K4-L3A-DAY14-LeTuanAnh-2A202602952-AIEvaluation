@@ -547,7 +547,9 @@ thay đổi Context Recall hay không.
 
 Hoàn thành `reflection.md` bằng kết quả thật từ Exercise 3.2.
 
-Sẽ hoàn thành ở CP5 bằng kết quả thật của Exercise 3.2.
+Đã hoàn thành — xem [`reflection.md`](reflection.md): benchmark summary, ba failure
+analysis theo 5 Whys (H01, A01, A03), failure clustering, improvement log và regression
+strategy.
 
 ---
 
@@ -560,6 +562,6 @@ Hoàn thành kiểm tra cuối trong khoảng 16:50–17:00.
 - [x] Exercise 3.1 hoàn thành trong file JSON và bảng kết quả phía trên.
 - [x] Exercise 3.2 có năm metrics, aggregate report và ba cases thấp nhất.
 - [x] Exercise 3.3 có rubric 1–5 và bias controls.
-- [ ] `reflection.md` có ba failure analyses và regression strategy.
-- [ ] Đã copy `template.py` thành `solution/solution.py`.
+- [x] `reflection.md` có ba failure analyses và regression strategy.
+- [x] Đã copy `template.py` thành `solution/solution.py`.
 - [ ] Exercise 3.4 và 3.5 chỉ làm nếu chọn bonus.
