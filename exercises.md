@@ -619,7 +619,7 @@ thay đổi Context Recall hay không.
 >    đẩy nhầm chunk lên trước. Đây là bằng chứng thực nghiệm rằng reranking có thể *làm hại*
 >    khi tín hiệu query không khớp miền tài liệu. Fix đúng: intent classification trước
 >    retrieval, hoặc luôn ghim `00_system_scope.md` vào context cho câu bị nghi out-of-scope.
-> 2. **Khi Precision đã ≈ 1.0 — reranking hết dư địa.** A02 đã ở 0.950, delta bằng 0. 13/20
+> 2. **Khi Precision đã ≈ 1.0 — reranking hết dư địa.** A02 đã ở 0.950, delta bằng 0. 15/20
 >    case trong benchmark đã có precision 1.000, nghĩa là với `top_k=5` trên corpus 10 tài liệu,
 >    reranking gần như không còn gì để cải thiện. Nó chỉ đáng đầu tư khi top-k lớn hoặc corpus lớn.
 > 3. **Khi evidence bị cắt ngang giữa hai chunk — phải sửa chunking.** Nếu điều kiện và ngoại

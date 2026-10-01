@@ -18,7 +18,7 @@ answer/context trace trong `artifacts/actual_answers.json` trước khi kết lu
 | Metric | Average | Min | Max | Nhận xét |
 |---|---:|---:|---:|---|
 | Context Recall | 0.853 | 0.300 (A01) | 1.000 (E01, E02, E03, M02, M05, M07, H05) | Cao trên toàn bộ nhánh in-scope (15/20 case ≥ 0.8). Chỉ sụp ở nhánh adversarial: A01 0.300 và A03 0.534. Trung bình cao đang **che giấu** một lỗi retrieval có hệ thống với câu out-of-scope. |
-| Context Precision | 0.935 | 0.250 (A01) | 1.000 (13/20 case) | Metric khoẻ nhất. 18/20 case ở mức Good. Với `top_k=5` trên corpus 10 tài liệu, chunk đúng gần như luôn nằm ở rank 1–2. Không phải nút thắt. |
+| Context Precision | 0.935 | 0.250 (A01) | 1.000 (15/20 case) | Metric khoẻ nhất. 18/20 case ở mức Good. Với `top_k=5` trên corpus 10 tài liệu, chunk đúng gần như luôn nằm ở rank 1–2. Không phải nút thắt. |
 | Faithfulness | 0.630 | 0.095 (A01) | 0.912 (M05) | 7/20 case dưới 0.6. Nhưng phân tích trace cho thấy nhóm này trộn hai thứ khác hẳn nhau: lỗi grounding thật (H01, H03) và câu từ chối đúng bị word-overlap phạt oan (A01, A02). |
 | Relevance | 0.568 | 0.111 (A01) | 0.846 (M04) | 8/20 dưới 0.6. Chủ yếu là artifact đo lường: câu hỏi viết theo giọng khách hàng dài dòng (M01, M05, H04), answer trả lời trúng trọng tâm nhưng không lặp lại từ ngữ câu hỏi nên mẫu số lớn. |
 | Completeness | 0.498 | 0.075 (A01) | 0.939 (M05) | **Metric yếu nhất: 15/20 case dưới 0.6.** Nguyên nhân kép — assistant thật sự trả lời cô đọng và bỏ điều kiện phụ, *cộng với* expected answer trong golden dataset được viết đầy đủ nên mẫu số lớn. |
